@@ -76,8 +76,11 @@ WSGI_APPLICATION = 'tutorzon.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'tutorzon_db',
+        'USER': 'postgres',
+        'PASSWORD': '731220'
+        'HOST': 'localhost',
     }
 }
 

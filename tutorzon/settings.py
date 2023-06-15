@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'pages',
     'cars',
     'accounts',
+    'contacts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -157,3 +158,11 @@ MESSAGE_TAGS = {
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SITE_ID = 1
+
+# email settings
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'ken@sktai.com'
+EMAIL_HOST_PASSWORD = 'P0lly073!'
+EMAIL_USE_TLS = True
